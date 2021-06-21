@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+#hero {
+  padding-bottom: 0px;
+}
+
+#offers {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#offers .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#offers .wrap .box {
+  width: 300px;
+  margin: auto;
+  margin-top: 41px;
+}
+
+#offers .wrap .box .icon {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#offers .wrap .box .icon i {
+  margin: auto;
+  color: #CC0E74;
+  font-size: 3em;
+}
+
+#offers .wrap .box .title {
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+#offers .wrap .box .title span {
+  font-size: 1.6em;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+  color: #CC0E74;
+}
+
+#offers .wrap .box .desc {
+  text-align: center;
+}
+
+#offers .wrap .box .desc span {
+  font-size: 1.2em;
+  font-family: "Nunito", sans-serif;
+}
+
+#aware {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  background-color: #fff;
+}
+
+#aware .image {
+  width: 50%;
+}
+
+#aware .image img {
+  width: 100%;
+}
+
+#aware .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aware .right .head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#aware .right .head h3 {
+  color: #CC0E74;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#aware .right .desc {
+  text-align: left;
+  padding: 20px;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  #aware {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #aware .image {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  #aware .image img {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  #aware .right .head {
+    margin-bottom: 0px;
+  }
+  #aware .right .head h3 {
+    font-size: 1.2em;
+  }
+  #aware .right .desc {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #aware {
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=brand.css.map */

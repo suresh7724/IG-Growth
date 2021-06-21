@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+$nunito:'Nunito', sans-serif;
+$montserrat:'Montserrat', sans-serif;
+$poppins:'Poppins', sans-serif;
+$ubuntu:'Ubuntu', sans-serif;;
+
+#hero
+{
+    padding-bottom: 0px;
+}
+
+// offers section css
+#offers
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .wrap
+    {
+        display: flex;
+        flex-wrap: wrap;
+        .box
+        {
+            width: 300px;
+            margin: auto;
+            margin-top: 41px;
+            .icon
+            {
+                margin-bottom: 15px;
+                text-align: center;
+
+                i{
+                    margin: auto;
+                    color: #CC0E74;
+                    font-size: 3em;
+                }
+            }
+            .title
+            {
+                text-align: center;
+                span{
+                    font-size: 1.6em;
+                    margin: auto;
+                    font-family: $ubuntu;
+                    color: #CC0E74;
+                }
+                margin-bottom: 11px;
+            }
+            .desc
+            {
+                text-align: center;
+                span{
+                    font-size: 1.2em;
+                    font-family: $nunito;
+
+                }
+            }
+        }
+    }
+}
+
+// aware section style
+#aware
+{
+    display: flex;
+    padding: 30px;
+    background-color: #fff;
+    .image
+    {
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .right
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .head
+        {
+            text-align: center;
+            margin-bottom: 20px;
+            h3{
+                color: #CC0E74;
+                font-family: $ubuntu;
+            }
+        }
+        .desc
+        {
+            text-align: left;
+            padding: 20px;
+            font-size: 1.2em;
+            font-family: $poppins;
+        }
+    }
+}
+
+// mediaqueries
+@media only screen and (max-width: 768px) {
+    #aware
+    {
+        flex-direction: column;
+        .image
+        {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            img{
+                margin: auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 401px) {
+    // #aware .right .head h3
+    #aware
+    {
+        .right
+        {
+            .head
+            {
+                h3
+            {
+                font-size: 1.2em;
+            }
+            margin-bottom: 0px;
+        }
+        .desc{
+            font-size: 1em;
+        }
+    }
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+    #aware
+    {
+        padding: 5px;
+    }
+}
